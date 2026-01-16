@@ -2,49 +2,203 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Numéra FR — Stockage sécurisé de données sensibles en France</title>
+  <title>Numéra FR — Stockage sécurisé de données sensibles</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Numéra FR propose un stockage sécurisé de données sensibles en France pour avocats, médecins et professions réglementées.">
+  <meta name="description" content="Numéra FR — Stockage sécurisé de données sensibles en France. Conçu et opéré par un ingénieur en cybersécurité.">
   <style>
-    body { font-family: system-ui, Arial; margin:0; background:#0b0f17; color:#e8eefc; }
-    .wrap { max-width:900px; margin:auto; padding:40px 20px; }
-    h1 { font-size:36px; }
-    h2 { margin-top:40px; }
-    p, li { color:#b6c2e2; }
-    .box { background:#121a27; padding:20px; border-radius:12px; margin-top:20px; }
-    a { color:#9fb7ff; text-decoration:none; }
-    footer { margin-top:50px; font-size:14px; }
+    :root {
+      --bg: #0e1117;
+      --card: #151a23;
+      --text: #e6eaf2;
+      --muted: #a7b0c3;
+      --accent: #5f8cff;
+      --border: #242b3a;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 60px;
+      font-size: 28px;
+    }
+
+    p {
+      color: var(--muted);
+      max-width: 720px;
+    }
+
+    .hero {
+      margin-bottom: 80px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 30px;
+    }
+
+    .profile {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--border);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 80px;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+    }
   </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <h1>Numéra FR</h1>
-    <p><strong>Stockage sécurisé de données sensibles, hébergé en France 🇫🇷</strong></p>
+  <div class="container">
 
-    <div class="box">
+    <!-- HERO -->
+    <section class="hero">
+      <span class="badge">Stockage sécurisé • France 🇫🇷</span>
+      <h1>Numéra FR</h1>
       <p>
-        Numéra FR accompagne les <strong>avocats</strong>, <strong>médecins</strong> et
-        professions réglementées dans la protection de leurs données sensibles.
+        Coffre numérique professionnel pour données sensibles.
+        Conçu pour les avocats, médecins et professions réglementées
+        qui exigent <strong>confidentialité</strong>, <strong>souveraineté</strong> et <strong>simplicité</strong>.
       </p>
-      <ul>
-        <li>Hébergement en France (serveur dédié)</li>
-        <li>Données chiffrées</li>
-        <li>Un espace isolé par client</li>
-        <li>Accès sécurisé (SFTP)</li>
-        <li>Conformité RGPD</li>
-      </ul>
-    </div>
+    </section>
 
-    <h2>Contact</h2>
-    <p>
-      📧 <a href="mailto:contact@votre-domaine.fr">contact@votre-domaine.fr</a><br>
-      📞 +33 X XX XX XX XX
-    </p>
+    <!-- QUI JE SUIS -->
+    <section>
+      <h2>Qui est derrière Numéra FR</h2>
+
+      <div class="card profile">
+        <img src="photo.jpg" alt="Fondateur Numéra FR">
+        <div>
+          <p>
+            Je suis <strong>ingénieur en cybersécurité</strong>, spécialisé dans la
+            protection des données et des infrastructures sensibles.
+          </p>
+          <p>
+            Numéra FR est né d’un constat simple :
+            les données critiques sont trop souvent stockées
+            sur des solutions opaques, étrangères ou sur-complexes.
+          </p>
+          <p>
+            🔗 <a href="https://www.linkedin.com/in/VOTRE-LINKEDIN" target="_blank">
+              Voir mon profil LinkedIn
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SÉCURITÉ -->
+    <section>
+      <h2>Comment vos données sont protégées</h2>
+
+      <div class="card">
+        <ul>
+          <li>
+            <strong>Chiffrement robuste</strong> : vos données sont chiffrées avec des
+            algorithmes éprouvés. Sans la clé privée, elles sont illisibles.
+          </li>
+          <li>
+            <strong>Clés sous contrôle</strong> : l’accès est strictement limité.
+            Aucun accès générique, aucune exploitation commerciale.
+          </li>
+          <li>
+            <strong>Serveur dédié en France</strong> : données hébergées exclusivement
+            sur une infrastructure française, hors juridictions étrangères.
+          </li>
+          <li>
+            <strong>Isolation par client</strong> : chaque client dispose de son
+            propre espace, totalement cloisonné.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SIMPLICITÉ -->
+    <section>
+      <h2>Sécurisé, mais simple à utiliser</h2>
+
+      <div class="card">
+        <ul>
+          <li>Accès sécurisé simple (pas de logiciel exotique)</li>
+          <li>Pas de migration complexe</li>
+          <li>Pas de dépendance à un cloud grand public</li>
+          <li>Support humain, direct, sans intermédiaire</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+      <h2>Contact</h2>
+
+      <div class="card">
+        <p>
+          📧 <a href="mailto:contact@numéra.fr">contact@numéra.fr</a><br>
+          Échange confidentiel, sans engagement.
+        </p>
+      </div>
+    </section>
 
     <footer>
+      © Numéra FR — Hébergement vitrine GitHub Pages · Données clients hébergées en France<br>
       <a href="mentions-legales.html">Mentions légales</a> ·
       <a href="confidentialite.html">Confidentialité</a>
     </footer>
+
   </div>
 </body>
 </html>
